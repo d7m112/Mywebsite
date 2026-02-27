@@ -3,39 +3,218 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello World</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: #fff;
-        }
-        .container {
-            text-align: center;
-        }
-        h1 {
-            font-size: 3rem;
-            margin-bottom: 0.5rem;
-        }
-        p {
-            font-size: 1.2rem;
-            opacity: 0.85;
-        }
-    </style>
+    <title>Abdulrahman Aldaghfaq | Cybersecurity Expert</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Hello, World!</h1>
-        <p>Welcome to my website.</p>
-    </div>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="logo">A<span>A</span></a>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="hero-content">
+            <p class="hero-greeting">Hello, I'm</p>
+            <h1 class="hero-name">Abdulrahman Aldaghfaq</h1>
+            <p class="hero-title">Cybersecurity Expert</p>
+            <p class="hero-desc">Protecting digital assets and securing the future, one system at a time.</p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">View My Work</a>
+                <a href="#contact" class="btn btn-outline">Get in Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I'm a passionate Cybersecurity Expert dedicated to protecting organizations from evolving digital threats. With a deep understanding of security frameworks, vulnerability assessment, and incident response, I help businesses build resilient security postures.</p>
+                    <p>My approach combines technical expertise with strategic thinking to identify vulnerabilities before they become breaches. I believe in proactive defense and continuous learning in this ever-changing landscape.</p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-number">—</span>
+                            <span class="stat-label">Years Experience</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">—</span>
+                            <span class="stat-label">Projects Completed</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">—</span>
+                            <span class="stat-label">Certifications</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon">&#128737;</div>
+                    <h3>Network Security</h3>
+                    <p>Firewall configuration, IDS/IPS, network monitoring, and traffic analysis to safeguard infrastructure.</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">&#128270;</div>
+                    <h3>Penetration Testing</h3>
+                    <p>Ethical hacking and vulnerability assessments to identify and remediate security weaknesses.</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">&#128200;</div>
+                    <h3>Incident Response</h3>
+                    <p>Rapid threat detection, containment, and recovery strategies to minimize damage from security incidents.</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">&#9729;</div>
+                    <h3>Cloud Security</h3>
+                    <p>Securing cloud environments across AWS, Azure, and GCP with best practices and compliance frameworks.</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">&#128272;</div>
+                    <h3>Cryptography</h3>
+                    <p>Implementing encryption protocols and secure communication channels to protect sensitive data.</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">&#128220;</div>
+                    <h3>Security Auditing</h3>
+                    <p>Comprehensive security assessments, compliance auditing, and risk management strategies.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Present</span>
+                        <h3>Cybersecurity Expert</h3>
+                        <p>Leading security initiatives, conducting penetration tests, and implementing robust defense strategies to protect critical systems and data.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Previous Role</span>
+                        <h3>Security Analyst</h3>
+                        <p>Monitored security events, performed vulnerability assessments, and developed incident response procedures for enterprise environments.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Earlier</span>
+                        <h3>IT Security Specialist</h3>
+                        <p>Managed security tools, conducted security awareness training, and assisted in building security policies and procedures.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-header">
+                        <span class="project-icon">&#128274;</span>
+                        <h3>Network Threat Monitor</h3>
+                    </div>
+                    <p>Real-time network monitoring dashboard that detects anomalous traffic patterns and potential intrusions using behavioral analysis.</p>
+                    <div class="project-tags">
+                        <span>Python</span>
+                        <span>SIEM</span>
+                        <span>Network Analysis</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-header">
+                        <span class="project-icon">&#128736;</span>
+                        <h3>Vulnerability Scanner</h3>
+                    </div>
+                    <p>Automated vulnerability scanning tool that identifies security weaknesses across web applications and network infrastructure.</p>
+                    <div class="project-tags">
+                        <span>Python</span>
+                        <span>Nmap</span>
+                        <span>OWASP</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-header">
+                        <span class="project-icon">&#128273;</span>
+                        <h3>Secure Auth Framework</h3>
+                    </div>
+                    <p>Multi-factor authentication framework with zero-trust architecture principles for enterprise application security.</p>
+                    <div class="project-tags">
+                        <span>OAuth 2.0</span>
+                        <span>MFA</span>
+                        <span>Zero Trust</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">Get in Touch</h2>
+            <p class="contact-desc">Have a question or want to work together? Feel free to reach out.</p>
+            <form class="contact-form" id="contactForm">
+                <div class="form-row">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder="Subject">
+                </div>
+                <div class="form-group">
+                    <textarea placeholder="Your Message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Abdulrahman Aldaghfaq. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
