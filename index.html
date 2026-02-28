@@ -442,58 +442,6 @@
             font-weight: 500;
         }
 
-        /* === Contact === */
-        .contact-desc {
-            text-align: center;
-            color: var(--text-secondary);
-            margin-bottom: 2.5rem;
-            font-size: 1.05rem;
-        }
-
-        .contact-form {
-            max-width: 650px;
-            margin: 0 auto;
-        }
-
-        .form-row {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 1rem;
-        }
-
-        .form-group {
-            margin-bottom: 1rem;
-        }
-
-        .form-group input,
-        .form-group textarea {
-            width: 100%;
-            padding: 0.85rem 1rem;
-            background: var(--bg-card);
-            border: 1px solid var(--border);
-            border-radius: 6px;
-            color: var(--text-primary);
-            font-family: var(--font);
-            font-size: 0.95rem;
-            transition: border-color 0.3s;
-            resize: vertical;
-        }
-
-        .form-group input::placeholder,
-        .form-group textarea::placeholder {
-            color: var(--text-muted);
-        }
-
-        .form-group input:focus,
-        .form-group textarea:focus {
-            outline: none;
-            border-color: var(--accent);
-        }
-
-        .contact-form .btn {
-            width: 100%;
-            font-size: 1rem;
-        }
 
         /* === Footer === */
         footer {
@@ -566,10 +514,6 @@
                 grid-template-columns: 1fr;
             }
 
-            .form-row {
-                grid-template-columns: 1fr;
-            }
-
             .section {
                 padding: 3.5rem 0;
             }
@@ -601,7 +545,6 @@
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
     </nav>
@@ -615,7 +558,6 @@
             <p class="hero-desc">Protecting digital assets and securing the future, one system at a time.</p>
             <div class="hero-buttons">
                 <a href="#projects" class="btn btn-primary">View My Work</a>
-                <a href="#contact" class="btn btn-outline">Get in Touch</a>
             </div>
         </div>
     </section>
@@ -764,30 +706,6 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="section">
-        <div class="container">
-            <h2 class="section-title">Get in Touch</h2>
-            <p class="contact-desc">Have a question or want to work together? Feel free to reach out.</p>
-            <form class="contact-form" id="contactForm">
-                <div class="form-row">
-                    <div class="form-group">
-                        <input type="text" placeholder="Your Name" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" placeholder="Your Email" required>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <input type="text" placeholder="Subject">
-                </div>
-                <div class="form-group">
-                    <textarea placeholder="Your Message" rows="5" required></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Send Message</button>
-            </form>
-        </div>
-    </section>
 
     <!-- Footer -->
     <footer>
@@ -836,7 +754,7 @@
         });
 
         // Scroll fade-in animation
-        const fadeElements = document.querySelectorAll('.skill-card, .timeline-item, .project-card, .about-text, .contact-form');
+        const fadeElements = document.querySelectorAll('.skill-card, .timeline-item, .project-card, .about-text');
         fadeElements.forEach(el => el.classList.add('fade-in'));
 
         const observer = new IntersectionObserver((entries) => {
@@ -849,12 +767,6 @@
 
         fadeElements.forEach(el => observer.observe(el));
 
-        // Contact form handler
-        document.getElementById('contactForm').addEventListener('submit', (e) => {
-            e.preventDefault();
-            alert('Thank you for your message! I will get back to you soon.');
-            e.target.reset();
-        });
     </script>
 </body>
 </html>
